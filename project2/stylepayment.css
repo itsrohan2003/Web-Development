@@ -1,0 +1,97 @@
+*{
+    box-sizing:border-box;
+}
+body{
+    font-family:'Lobster Two', cursive;
+    margin:15px 30px;
+    font-size:20px;
+    padding:8px;
+}
+div[class=container]{
+    background-color:#f2f2f2;
+    padding:5px 20px  15px 20px;
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    width:60%;
+    margin-left:20%;
+    margin-top:10%;
+    margin-bottom:10%;
+
+}
+input[type="text"],
+input[type="email"],
+input[type="number"],
+input[type="password"],
+input[type="date"],
+select,
+textarea,
+fieldset
+        {
+            background-color:white;
+            border: black solid 1px;
+            width:100%;
+            padding:12px;
+            border: 1px solid #ccc;
+            border-radius:5px;
+            margin:10px;
+        }
+.main_heading{
+    
+    text-align:center;
+    font-family:'Lobster Two', cursive;
+    background-color:black;    
+    border-radius: 10px;
+    color:white;
+    padding:12px;
+    font-size: 300%;
+    
+    
+    
+}
+input[type="submit"]{
+    background-color:seagreen;
+    color:white;
+    padding:5px 7px;
+    border: none;
+    border-radius: 4px;
+    cursor:pointer;
+    width: 100%;
+    font-family: 'Lobster Two', cursive;
+    font-size:200%
+}
+input[type="submit"]:hover{
+    background-color:transparent;
+    color:black;
+    border:1px black solid;
+    
+}
+h1,h2{
+    font-weight: lighter;
+}
+.centered{
+    text-align:center
+}
+img[id=mastercard],img[id=visa],img[id=rupay]{
+    margin:12px;
+    height:100px;
+    width:200px;
+}
+select option{
+    font-size:x-large;
+}
+.clip-path{
+    clip-path: circle(13.1% at 50% 50%);
+}
+img#mastercard{
+    top:8px;
+    left:8px;
+    z-index:1;
+}
+im#rupay{
+    top:25px;
+    left:25px;
+    z-index:2;
+}
+
+
+

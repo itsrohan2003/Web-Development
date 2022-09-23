@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>payment form</title>
+    <link rel="stylesheet" href="stylepayment.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Lobster+Two&display=swap');
+    </style>
+</head>
+<body>
+    
+    <div class="container">
+          <!--payment form--> <!--action is for server location-->
+     <form action="">
+        <h1 class="main_heading">Payment Form</h1>
+        <hr>
+        <h2> Required Fields are followed by*</h2><br>
+        <h2 class="centered">Contact Information</h2>
+        <p>First Name* <br><input type="text" name="FirstName" placeholder="Amit" required></p>
+        <p>Last Name<br> <input type="text" name="LastName" placeholder="Sharma"></p>
+        <!--name attribute in input element is for the field in database in the server.-->
+        <fieldset><legend>Gender</legend><!--to make a box-->
+
+            
+            Male <input type="radio" name="gender" required> &nbsp;
+            Female <input type="radio" name="gender" required>&nbsp;
+            Other <input type="radio" name="gender" required>
+            <!--name attribute has same value hence comes under the same field of gender-->
+        </fieldset>
+        <p>Address <br> <textarea name="address" id="ad" colls="30" rows="5" placeholder="Enter Your Address"></textarea></p>
+        <!--text area for a big text box input-->
+        <p>E-Mail<br> <input type="email" name="email" id="email" placeholder="xyz@qwe.com"></p>
+        <p>PinCode<br> <input type="number" name="pincode" id="pin" placeholder="12345"></p>
+        <!--google 'input types html for forms'-->
+
+        <h2 class="centered">Payment Information</h2>
+        <p>Card Type<br>
+            <select name="card type" id="card_type" required>
+                <option value="">SELECT A CARD</option>
+                <option value="visa">Visa</option>
+                <option value="rupay">Rupay</option>
+                <option value="mastercard">Mastercard</option>
+            </select>
+            
+            <img src="mastercard.png" id="mastercard" class="clip-path">
+            <img src="rupay.jpg" id="rupay" class="clip-path"> 
+            <img src="1200px-Visa.svg.png" id="visa" class="clip-path">
+
+        
+           </p>
+            <p>
+                Card Number <br><input type="number" name="card number" id="card_number" placeholder="123456789">
+            </p>
+            <p>
+                 Expiration Date <br><input type="date" id="exp_date" placeholder="DD-MM-YYYY">
+            </p>
+            <p>
+                CVV <br> <input type="password" name="cvv" id="cvv" placeholder="123">
+            </p>
+            <br>
+            <input type="submit" value="Pay Now">
+     </form>
+    </div>
+
+</body>
+
+</html>
