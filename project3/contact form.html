@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contact Form</title>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Architects+Daughter&display=swap');
+        </style>
+    <style>
+    body{
+        font-family:'Architects Daughter', cursive;
+    }
+      .heading{
+           text-align:center;
+           padding:15px;
+           margin: 1px;
+           background-color:purple;
+           border-radius:8px;
+           border:1px solid white;
+           padding:12px;
+           color:white;
+      }
+      marquee{
+          color:black;
+      }
+         
+        .sub{
+            padding:1px;
+            margin:1px;
+            font-size:10px;
+        }
+         div[class=whole]{
+             width:50%;
+             margin-left:25%;
+             background-color:thistle;
+             border-radius:8px;
+             margin-top:15%;
+             margin-bottom:15%;
+             padding:20px 20px  15px 20px;
+         }
+         
+       input[type=text],
+       input[type=email],
+       textarea,
+       select{
+           background-color:#EFE1CE;
+           border:none;
+           
+           width:90%;
+           padding:2%;
+           margin-left:3%;
+           border-radius:5px;
+       }
+
+            
+                
+               
+                
+
+             
+            
+        
+        
+        input[type=submit]{
+            width:40%;
+            padding:5px;
+            margin-left:30%;
+            border-radius:5px;
+            background-color:white;
+            border:none;
+            margin-bottom:3%;
+
+         }
+         input[type=submit]:hover{
+             background-color:transparent;
+             border: purple 2px solid;
+         }
+         textarea{
+    overflow:scroll;
+         }
+        
+         
+        p{
+            padding:3%;
+        }
+        
+
+        
+
+
+
+
+
+        
+
+
+    </style>
+</head>
+<body>
+<div class="whole">
+    
+   
+        
+        <h1 class="heading">Contact Form</h1>
+        <p> <marquee direction="right">please fill all details</marquee></p>
+    
+        
+
+    <form action="">
+       
+        <div class="details">
+        
+        <p>Your Name<br><input type="text" name="user name" placeholder="Raj"></p>
+        <p>Your Email<br><input type="email" name="email" placeholder="xyz@abc.com"></p>
+        <P>Message<br><textarea name="message/feedback" coll="30" rows="5" placeholder="Type your address"></textarea></P>
+        <p>Subject<br>
+        <select name="subject">
+            <option value="">Please select the subject</option>
+            <option value="carreer">Job Enquiry</option>
+            <option value="feedback">Feedback</option>
+            <option value="complaint">Complaint</option>
+            <option value="suggestion">Suggestion</option>
+        </select></p>
+       </div>
+        <br>
+        <input type="submit" value="Send Message">
+    </form>
+</div>
+</body>
+</html>
